@@ -1020,7 +1020,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@geostreams/core@^3.6.0":
+"@geostreams/core@^3.6.0", "@geostreams/core@^3.6.2":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@geostreams/core/-/core-3.8.0.tgz#e79b79bb31f9aea667773575f51e8a6fc6481c48"
   integrity sha512-Pu+mrxVnWx086m9bmfwn9GuahDISt16nk820StctAGqKAEyku+dyQu7FzSl/pJK0UiYp+TW73vxTObk8EwWOuw==
@@ -1062,7 +1062,7 @@
   dependencies:
     "@babel/eslint-parser" "^7.13.14"
 
-"@geostreams/geostreaming@^3.6.0":
+"@geostreams/geostreaming@^3.6.2":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@geostreams/geostreaming/-/geostreaming-3.8.0.tgz#bd320ee17573f8ab1203145496859093bcc368ce"
   integrity sha512-5Teh5imrT4ftk07eMek+cI0Jq3+ZXvZC7S5NryDKQP58dEhdW2hdshFEHSQj7O3je21a+Xjd9Z4TKLNynLO3mA==
