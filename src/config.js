@@ -1,11 +1,19 @@
 export default {
     map: {
+        geoserverUrl: process.env.GEOSERVER_URL,
+        zoom: 7,
+        center: [-9972968, 4972295],
+        useCluster: true,
+        clusterDistance: 45,
         clusterExpandCountThreshold: 10,
-        clusterExpandZoomThreshold: 12
+        clusterExpandZoomThreshold: 12,
+        layers: {
+        }
     },
     geostreamingEndpoint: process.env.GEOSTREAMS_URL,
     sensors: {
-        displayOnlineStatus: false
+        maxDisplayParameters: 10,
+        displayOnlineStatus: true
     },
     source: {
         'ads': {
@@ -103,5 +111,6 @@ export default {
             more_info: 'For more information and for access to all USGS water quantity and quality data.',
             link : 'http://waterdata.usgs.gov/nwis'
         }
-    }
+    },
+    locations: []
 };

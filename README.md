@@ -1,3 +1,5 @@
-## CINet Frontend
+## CINet Geodashboard
 
-https://cinet.ncsa.illinois.edu/
+Based on https://github.com/geostreams/geodashboard.
+
+See https://cinet.ncsa.illinois.edu/ for more info.
