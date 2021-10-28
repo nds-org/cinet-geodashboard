@@ -1,6 +1,6 @@
 FROM node:14 as build
 
-ARG CONTEXT=/geodashboard
+#ARG CONTEXT=/geodashboard
 
 RUN git clone https://github.com/geostreams/geodashboard.git /tmp/geodashboard
 WORKDIR /tmp/geodashboard
