@@ -3,7 +3,7 @@ const webpackMerge = require('webpack-merge');
 
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const commonConfig = require('./webpack.common');
-
+console.log(`the current process.env.CONTEXT environment variable is ${ process.env.CONTEXT}`);
 module.exports = webpackMerge.merge(commonConfig, {
     mode: 'development',
     devtool: 'cheap-module-source-map',
@@ -16,7 +16,8 @@ module.exports = webpackMerge.merge(commonConfig, {
         stats: { 'errors-only': true, 'colors': true },
         historyApiFallback: true,
         allowedHosts: JSON.parse(process.env.ALLOWED_HOSTS || '["localhost"]'),
-        headers: { 'Access-Control-Allow-Origin': '*' }
+        headers: { 'Access-Control-Allow-Origin': '*' },
+        publicPath: process.env.CONTEXT || '/'
     },
 
     plugins: [

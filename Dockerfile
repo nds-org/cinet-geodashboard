@@ -1,9 +1,12 @@
 FROM node:14 as build
 
-#ARG CONTEXT=/geodashboard
+ARG GEODASHBOARD_VERSIO=fix/router-basename
+ARG CONTEXT=/geodashboard
+ARG GEOSTREAMS_URL=https://cinet.141.142.216.39.nip.io/geostreams
 
 RUN git clone https://github.com/geostreams/geodashboard.git /tmp/geodashboard
 WORKDIR /tmp/geodashboard
+RUN if [[ -z "${GEODASHBOARD_VERSION}" ]] ; then git switch --detach $GEODASHBOARD_VERSION ; fi
 RUN yarn && yarn link:all
 
 COPY ./ /tmp/cinet/
