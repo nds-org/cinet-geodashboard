@@ -1,6 +1,6 @@
 {
   "name": "cinet-geodashboard",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "src/index.jsx",
   "scripts": {
     "link:geostreams": "yarn link @geostreams/core && yarn link @geostreams/geostreaming && yarn link @geostreams/core__old",
