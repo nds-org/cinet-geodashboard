@@ -15,7 +15,7 @@ function Home() {
     return (
         <div>
             <div className={styles.custom_page}>
-                <div textStyle={styles.title}> Geodashboard Template</div>
+                <div textStyle={styles.title}> CINet Geodashboard</div>
             </div>
         </div>
     );

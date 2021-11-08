@@ -13,19 +13,14 @@ import Tests from './tests/Tests';
 // $FlowFixMe
 const routes = Object.assign(Routes, {
     '/': {
-        component: hocs.withLayout(Layout, Home, { hasFooter: true }),
+        component: hocs.withLayout(Layout, ExplorePage),
         exact: true
     },
-    '/about': { component: hocs.withLayout(Layout, About), exact: true },
     '/:parent(explore|search)/detail/location/:name/:category': {
         component: hocs.withLayout(Layout, SensorDetail)
     },
     '/search': {
         component: hocs.withLayout(Layout, SearchPage),
-        exact: true
-    },
-    '/explore/:stations': {
-        component: hocs.withLayout(Layout, ExplorePage),
         exact: true
     }
 });

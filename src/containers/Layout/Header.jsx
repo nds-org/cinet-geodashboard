@@ -78,7 +78,7 @@ const Header = ({ location }: Props) => {
                     variant="h6"
                     noWrap
                 >
-                    Geodashboard Template Project
+                    CINet Geodashboard
                 </Typography>
                 <Tabs
                     classes={{
@@ -97,24 +97,10 @@ const Header = ({ location }: Props) => {
                     />
                     <Tab
                         className={`${classes.tabRoot}`}
-                        label="Explore"
-                        component={Link}
-                        to="/explore/all"
-                        value="explore"
-                    />
-                    <Tab
-                        className={`${classes.tabRoot}`}
                         label="Download"
                         component={Link}
                         to="/search"
                         value="search"
-                    />
-                    <Tab
-                        className={`${classes.tabRoot}`}
-                        label="About"
-                        component={Link}
-                        to="/about"
-                        value="about"
                     />
                 </Tabs>
             </Toolbar>
