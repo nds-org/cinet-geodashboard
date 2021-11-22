@@ -1,6 +1,6 @@
 export default {
     map: {
-        geoserverUrl: process.env.GEOSERVER_URL,
+        geoserverUrl: process.env.GEOSERVER_URL || window.location.origin.replace('geodashboard', 'geoserver'),
         zoom: 7,
         center: [-9972968, 4972295],
         useCluster: true,
@@ -10,7 +10,7 @@ export default {
         layers: {
         }
     },
-    geostreamingEndpoint: process.env.GEOSTREAMS_URL,
+    geostreamingEndpoint: process.env.GEOSTREAMS_URL || window.location.origin.replace('geodashboard', 'geostreams'),
     sensors: {
         maxDisplayParameters: 10,
         displayOnlineStatus: true
